@@ -1,0 +1,81 @@
+*{
+    background-color: #fff8dc;
+    margin: 0px;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Geologica', sans-serif;
+}
+
+img{
+    width: 600px;
+}
+
+.form p{
+    font-size: 20px;
+    font-family: 'Geologica', sans-serif;
+}
+
+.form{
+    min-width: 600px;
+    min-height: 532px;
+    text-align: center;
+    margin-top: 40px;
+    float: right;
+}
+
+label{
+    font-size: 25px;
+}
+
+select{
+    margin: 10px;
+    background-color: white;
+    font-size: 20px;
+}
+
+button {
+    --color: black;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.5999999999999996em;
+    line-height: 2.5em;
+    overflow: hidden;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+    align-items: center;
+    
+  }
+  
+  button::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+  }
+  
+  button:hover {
+    color: white;
+  }
+  
+  button:before {
+    top: 100%;
+    left: 100%;
+    transition: .3s all;
+  }
+  
+  button:hover::before {
+    top: -30px;
+    left: -30px;
+  }
